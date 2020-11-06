@@ -3,7 +3,7 @@
 <h2>De sjoveste jokes nogensinde</h2>
 <dl>
     {{#each jokes}}
-    <dt style="font-weight: bold;">{{setup}}</dt>
-    <dd>{{punchline}}</dd><br>
+    <p id="setup">{{setup}}</p>
+    <p id="punchline">- {{punchline}}</p><br>
     {{/each}}
 </dl>

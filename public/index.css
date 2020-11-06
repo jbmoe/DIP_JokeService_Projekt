@@ -1,0 +1,23 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-repeat: round;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#jokesdiv{    
+    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+    margin: 30px;
+    background-color: lightgrey;
+    max-width: 50vh;
+    padding: 5px;
+    border-radius: 5px 5px 5px;
+    padding-left: 25px;
+}
+
+#setup{
+    font-weight: bold;
+}

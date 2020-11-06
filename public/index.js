@@ -47,6 +47,13 @@ async function get(url) {
     return await respons.json();
 }
 
+async function getText(url) {
+    const respons = await fetch(url);
+    if (respons.status !== 200) // OK
+        throw new Error(respons.status);
+    return await respons.text();
+}
+
 async function post(url, objekt) {
     const respons = await fetch(url, {
         method: "POST",
@@ -58,15 +65,8 @@ async function post(url, objekt) {
     return await respons.json();
 }
 
-async function getText(url) {
-    const respons = await fetch(url);
-    if (respons.status !== 200) // OK
-        throw new Error(respons.status);
-    return await respons.text();
-}
-
 async function generateJokesTable(jokes) {
-    let template = await getText('/index.hbs');
+    let template = await getText('/jokes.hbs');
     let compiledTemplate = Handlebars.compile(template);
     return compiledTemplate({ jokes });
 }
@@ -101,6 +101,10 @@ function createSelect(result) {
         let option = document.createElement('option')
         option.text = siteArray[i]
         selectSite.add(option, i)
+
+        if (option.text == 'the8thgrp') {
+            option.selected = 'selected';
+        }
     }
 
 }
