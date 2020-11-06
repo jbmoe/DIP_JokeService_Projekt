@@ -1,5 +1,6 @@
 body{
     background-image: url("https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-size: auto;
     background-repeat: round;
     display: grid;
     place-items: center;
