@@ -14,9 +14,7 @@ selectSite.onchange = async () => {
                 id = site._id
             }
         }
-        let jokes = await get("/api/otherjokes/" + id)
-        let div = document.getElementById('jokesdiv')
-        div.innerHTML = await generateJokesTable(jokes);
+        visJokes("/api/otherjokes/" + id);
     }
     catch (e) {
         alert("Den valgte jokeservice virker desværre ikke :(\nPrøv en anden!")
@@ -31,7 +29,7 @@ opretButton.onclick = async () => {
         }
         setupField.value = ""
         punchlineField.value = ""
-        main('/api/jokes')
+        visJokes('/api/jokes')
     }
 }
 
@@ -71,7 +69,7 @@ async function generateJokesTable(jokes) {
     return compiledTemplate({ jokes });
 }
 
-async function main(url) {
+async function visJokes(url) {
     try {
         let jokes = await get(url);
         let div = document.getElementById('jokesdiv')
@@ -81,7 +79,6 @@ async function main(url) {
     }
 }
 
-main('/api/jokes');
 
 async function getSites() {
     try {
@@ -109,4 +106,5 @@ function createSelect(result) {
 
 }
 
+visJokes('/api/jokes');
 getSites()
