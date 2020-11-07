@@ -1,5 +1,4 @@
 // jokes.js
-const controller = require("../controller/controller");
 const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch')
@@ -35,14 +34,6 @@ function sendStatus(e, response) {
     console.error("Exception: " + e);
     if (e.stack) console.error(e.stack);
     response.status(500).send(e);
-}
-
-function isJson(str) {
-    try {
-        return JSON.parse(str);
-    } catch (e) {
-        return false;
-    }
 }
 
 module.exports = router;
