@@ -12,27 +12,27 @@ body{
 }
 
 #jokePicker {
-    box-shadow: -4px -3px 45px 21px rgb(250 0 255 / 0.35);
+    box-shadow: 0px 0px 30px 30px rgb(250, 0, 255, 0.35);
     margin: 30px;
-    background-color: rgb(255 255 255 / 80%);
+    background-color: rgb(255, 100, 255, 80%);
     padding: 35px;
-    border-radius: 5px 5px 5px;
+    border-radius: 20px 20px 20px;
 }
 
 #jokesdiv {
-    box-shadow: -4px -3px 45px 21px rgba(0, 98, 255, 0.35);
+    box-shadow: 0px 0px 30px 30px rgba(0, 98, 255, 0.35);
     margin: 30px;
-    background-color: rgb(166 200 255);
+    background-color: rgb(136 182 255);
     padding: 35px;
-    border-radius: 5px 5px 5px;
+    border-radius: 20px 20px 20px;
 }
 
 #create {
-    box-shadow: -4px -3px 45px 21px rgba(255, 0, 0, 0.35);
+    box-shadow: 0px 0px 30px 30px rgba(230 255 0 / 35%);
     margin: 30px;
-    background-color: rgb(245 248 250);
+    background-color: rgb(245 255 138 / 80%);
     padding: 35px;
-    border-radius: 5px 5px 5px;
+    border-radius: 20px 20px 20px;
     padding-top: 25px;
 }
 
