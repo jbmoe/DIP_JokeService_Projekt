@@ -8,18 +8,32 @@ body{
     display: grid;
     place-items: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
-#jokesdiv{    
-    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+#jokePicker {
+    box-shadow: -4px -3px 45px 21px rgb(250 0 255 / 0.35);
     margin: 30px;
-    background-color: lightgrey;
-    max-width: 50vh;
-    padding: 5px;
+    background-color: rgb(255 255 255 / 80%);
+    padding: 35px;
     border-radius: 5px 5px 5px;
-    padding-left: 25px;
+}
+
+#jokesdiv {
+    box-shadow: -4px -3px 45px 21px rgba(0, 98, 255, 0.35);
+    margin: 30px;
+    background-color: rgb(166 200 255);
+    padding: 35px;
+    border-radius: 5px 5px 5px;
+}
+
+#create {
+    box-shadow: -4px -3px 45px 21px rgba(255, 0, 0, 0.35);
+    margin: 30px;
+    background-color: rgb(245 248 250);
+    padding: 35px;
+    border-radius: 5px 5px 5px;
+    padding-top: 25px;
 }
 
 #setup{

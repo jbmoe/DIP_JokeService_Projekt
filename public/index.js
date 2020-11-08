@@ -12,7 +12,13 @@ selectSite.onchange = async () => {
         for (site of othersitesObjects) {
             if (site.name === selectSite.value) {
                 id = site._id
+                break;
             }
+        }
+        if (selectSite.value !== 'the8thgrp') {
+            document.getElementById('create').style.visibility = 'hidden';
+        } else {
+            document.getElementById('create').style.visibility = 'visible';
         }
         visJokes("/api/otherjokes/" + id);
     }
